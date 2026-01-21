@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#fef3c7"/>
+
+  <!-- Shadow (offset) -->
+  <ellipse cx="532" cy="572" rx="300" ry="280" fill="#000000"/>
+
+  <!-- Main tomato body -->
+  <ellipse cx="512" cy="552" rx="300" ry="280" fill="#fde68a" stroke="#000000" stroke-width="20"/>
+
+  <!-- Tomato indentation at top (creates the tomato look) -->
+  <path d="M 380 320 Q 512 380 644 320" fill="none" stroke="#000000" stroke-width="12"/>
+
+  <!-- Stem shadow -->
+  <rect x="504" y="230" width="40" height="100" fill="#000000" transform="translate(12, 12)"/>
+
+  <!-- Stem -->
+  <rect x="492" y="218" width="40" height="100" fill="#7c3aed" stroke="#000000" stroke-width="12"/>
+
+  <!-- Leaf shadow -->
+  <ellipse cx="602" cy="262" rx="80" ry="35" fill="#000000" transform="rotate(-25, 590, 250) translate(10, 10)"/>
+
+  <!-- Leaf -->
+  <ellipse cx="590" cy="250" rx="80" ry="35" fill="#bbf7d0" stroke="#000000" stroke-width="12" transform="rotate(-25, 590, 250)"/>
+
+  <!-- Leaf vein -->
+  <line x1="530" y1="260" x2="650" y2="230" stroke="#000000" stroke-width="6" transform="rotate(-25, 590, 250)"/>
+
+  <!-- Highlight on tomato (gives depth) -->
+  <ellipse cx="380" cy="480" rx="60" ry="80" fill="#ffffff" opacity="0.3"/>
+</svg>

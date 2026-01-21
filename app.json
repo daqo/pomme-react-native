@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "temp_project",
-    "slug": "temp_project",
+    "name": "Pomme",
+    "slug": "pomme",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,15 +13,40 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      },
+      "bundleIdentifier": "com.pomme.timer"
     },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/work_complete.wav",
+            "./assets/rest_complete.wav"
+          ]
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.pomme.timer"
     },
     "web": {
       "favicon": "./assets/favicon.png"
